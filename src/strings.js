@@ -11,15 +11,20 @@ const lowercase = string => {
 };
 
 const countCharacters = string => {
- return 0; 
+ return string.length;
 };
 
 const firstCharacter = string => {
-  // your code here
+  return string.charAt(0);
 };
 
 const firstCharacters = (string, n) => {
-  // your code here
+  const charList = [];
+
+  for (let i = 0; i < n; i++){
+    charList.push(string.charAt(i));
+  }
+  return charList.join('');
 };
 
 module.exports = {
