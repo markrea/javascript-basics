@@ -1,6 +1,5 @@
 const sayHello = string => {
   return "Hello, " + string + "!";
-
 };
 
 const uppercase = string => {
@@ -8,11 +7,11 @@ const uppercase = string => {
 };
 
 const lowercase = string => {
-  // your code here
+  return string.toLowerCase();
 };
 
 const countCharacters = string => {
-  // your code here
+  return string.
 };
 
 const firstCharacter = string => {
