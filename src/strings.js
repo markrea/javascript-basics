@@ -11,7 +11,11 @@ const lowercase = string => {
 };
 
 const countCharacters = string => {
+<<<<<<< HEAD
   return string.
+=======
+ return 0; 
+>>>>>>> 4730f0bbea4bd999331b2569fe082d5af9342ae2
 };
 
 const firstCharacter = string => {
