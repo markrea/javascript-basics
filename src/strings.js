@@ -1,17 +1,17 @@
 const sayHello = string => {
-  // your code here
+  return "Hello, " + string + "!";
 };
 
 const uppercase = string => {
-  // your code here
+  return string.toUpperCase();
 };
 
 const lowercase = string => {
-  // your code here
+  return string.toLowerCase();
 };
 
 const countCharacters = string => {
-  // your code here
+  
 };
 
 const firstCharacter = string => {
