@@ -1,33 +1,34 @@
 const getNthElement = (index, array) => {
-  return array.index(n);
+  return array[index % array.length];
+
 };
 
 const arrayToCSVString = array => {
-  // your code here
+  return array.join();
 };
 
 const csvStringToArray = string => {
-  // your code here
+  return string.split(",");
 };
 
 const addToArray = (element, array) => {
-  // your code here
+  array.push(element);
 };
 
 const addToArray2 = (element, array) => {
-  // your code here
+  return array.concat(element);
 };
 
 const removeNthElement = (index, array) => {
-  // your code here
-};
-
+  const deletedItem =  array.splice(index, 1);
+  return array;
+}
 const numbersToStrings = numbers => {
-  // your code here
+  return numbers.map(String);
 };
 
 const uppercaseWordsInArray = strings => {
-  // your code here
+  
 };
 
 const reverseWordsInArray = strings => {
@@ -75,5 +76,3 @@ module.exports = {
   sumNumbers,
   sortByLastLetter
 };
-
-test
