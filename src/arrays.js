@@ -28,35 +28,43 @@ const numbersToStrings = numbers => {
 };
 
 const uppercaseWordsInArray = strings => {
-  
+ return strings.map(a =>a.toUpperCase());
 };
 
 const reverseWordsInArray = strings => {
-  // your code here
+  return strings.map(function(newString) {return newString.split("").reverse().join("")});
 };
 
 const onlyEven = numbers => {
-  // your code here
+  return numbers.filter(numbers => numbers % 2 === 0);
 };
 
 const removeNthElement2 = (index, array) => {
-  // your code here
+  const newArray = [...array];
+  newArray.splice(index, 1);
+  return newArray;
 };
 
 const elementsStartingWithAVowel = strings => {
-  // your code here
+const vowels = ['a', 'e', 'i', 'o', 'u'];
+  return strings.filter(word => {
+    const beginsWith = word[0].toLowerCase();
+    return vowels.includes(beginsWith);
+  });
 };
 
 const removeSpaces = string => {
-  // your code here
+  return string.split(" ").join("");
 };
 
 const sumNumbers = numbers => {
-  // your code here
+  return numbers.reduce((total, amount) => total + amount);
+  
 };
 
 const sortByLastLetter = strings => {
-  // your code here
+  const reverseStrings = (string) => string.split("").reverse().join("");
+  return strings.map(reverseStrings).sort().map(reverseStrings);
 };
 
 module.exports = {
